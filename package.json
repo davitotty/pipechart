@@ -1,6 +1,6 @@
 {
   "name": "pipechart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero-dependency CLI tool that pipes JSON to real-time ASCII charts in the terminal",
   "main": "bin/pipechart.js",
   "bin": {
