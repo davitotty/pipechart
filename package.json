@@ -1,0 +1,39 @@
+{
+  "name": "pipechart",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI tool that pipes JSON to real-time ASCII charts in the terminal",
+  "main": "bin/pipechart.js",
+  "bin": {
+    "pipechart": "./bin/pipechart.js"
+  },
+  "scripts": {
+    "start": "node bin/termviz.js"
+  },
+  "keywords": [
+    "cli",
+    "chart",
+    "ascii",
+    "terminal",
+    "json",
+    "visualization",
+    "sparkline",
+    "histogram",
+    "bar-chart",
+    "line-chart",
+    "ansi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/pipechart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/pipechart/issues"
+  },
+  "homepage": "https://github.com/yourusername/pipechart#readme"
+}
