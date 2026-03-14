@@ -138,7 +138,8 @@ function runBatchMode() {
 
   process.stdin.on('end', function() {
     var raw = chunks.join('');
-    raw = raw.trim();
+    // Sanitize for Windows: strip BOM, carriage returns, then trim whitespace
+    raw = raw.replace(/^\uFEFF/, '').replace(/\r/g, '').trim();
 
     if (!raw) {
       process.stderr.write('pipechart: no input received. Pipe JSON data to stdin.\n');
